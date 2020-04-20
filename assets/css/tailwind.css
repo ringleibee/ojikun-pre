@@ -6,6 +6,7 @@
 
 * {
   @apply box-border m-0;
+  background-color: #151515;
 }
 
 *:focus {
