@@ -2,12 +2,12 @@
   <div>
       <section class="about min-h-screen flex items-center">
         <div class="container mx-auto">
-          <div class="about-title flex flex-col leading-none">
+          <div class="about-title flex flex-col text-right leading-none">
             <p class="font-bold text-6xl">ABOUT ME</p>
             <p>INFOMATION ABOUT ME</p>
           </div>
 
-          <div class="about-contents flex flex-row">
+          <div class="about-contents flex flex-row-reverse">
             <!-- Photo -->
             <img class="about-photo" alt="about-me" src="~assets/images/shine.png">
 
