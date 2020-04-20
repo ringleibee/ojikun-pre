@@ -1,5 +1,10 @@
 <template>
-  <div></div>
+  <div>
+      <section class="home">
+        <div class="container mx-auto">
+        </div>
+      </section>
+  </div>
 </template>
 
 <script lang="ts">
@@ -12,4 +17,8 @@ export default Vue.extend({
 </script>
 
 <style>
+.home {
+  @apply min-h-screen bg-cover bg-center;
+  background-image: url("~assets/images/top.jpg");
+}
 </style>
