@@ -16,4 +16,5 @@ export default Vue.extend({
 </script>
 
 <style>
+しね
 </style>
