@@ -22,6 +22,8 @@ export default Vue.extend({
 
 <style>
 header {
-  @apply absolute left-0 right-0;
+  background: black;
+  @apply fixed top-0 left-0 right-0;
 }
+
 </style>

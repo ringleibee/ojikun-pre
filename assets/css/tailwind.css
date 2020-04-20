@@ -8,6 +8,10 @@
   @apply box-border m-0;
 }
 
+*:focus {
+  @apply outline-none;
+}
+
 body {
   @apply m-0 text-white;
   background: black;

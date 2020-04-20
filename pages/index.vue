@@ -1,24 +1,19 @@
 <template>
   <div>
-      <section class="home">
-        <div class="container mx-auto">
-        </div>
-      </section>
+    <o-home-section />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import OHomeSection from '~/components/OHomeSection.vue'
 
 export default Vue.extend({
   components: {
+    OHomeSection
   }
 })
 </script>
 
 <style>
-.home {
-  @apply min-h-screen bg-cover bg-center;
-  background-image: url("~assets/images/top.jpg");
-}
 </style>

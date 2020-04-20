@@ -6,7 +6,7 @@
           <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
         </div>
         <div class="navbar">
-          <ul class>
+          <ul class="menulink">
             <li>
               <nuxt-link to="/">
                 Home
@@ -44,6 +44,10 @@
 </template>
 
 <style>
+.logo {
+  @apply text-2xl tracking-widest;
+}
+
 ul {
   @apply p-0 m-0;
 }
@@ -54,5 +58,24 @@ li {
 
 .navbar ul li {
   line-height: 72px;
+}
+
+.menulink > li {
+  @apply relative inline-block no-underline tracking-widest;
+}
+
+.menulink > li::after {
+  @apply absolute left-0 w-full;
+  bottom: -6px;
+  content: '';
+  height: 4px;
+  background: white;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.5s;
+}
+
+.menulink > li:hover::after {
+  transform: scale(1, 1);
 }
 </style>
