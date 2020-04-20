@@ -9,7 +9,7 @@
 
           <div class="about-contents flex flex-row">
             <!-- Photo -->
-            <img class="about-photo" alt="about-me" src="~assets/images/aboutme.png">
+            <img class="about-photo" alt="about-me" src="~assets/images/shine.png">
 
             <!-- Desc -->
             <div class="flex flex-col ml-10 leading-none">
@@ -18,7 +18,7 @@
               <p class="text-gray-500 text-xs mt-5">
                 hello, world.hello, worldhello, worldhello, worldhello, worldhello, worldhello, world
                 hello, worldhello, worldhello, worldhello, worldhello, worldhello, worldhello, world
-                hello, worldhello, worldhello, worldhello, worldhello, worldhello, worldhello, world
+                hello, worldhello, worldhello, worldhello, worldhello, worldhello, worldhello, worlda
                 hello, worldhello, worldhello, worldhello, worldhello, worldhello, worldhello, world
               </p>
               <div class="info">
