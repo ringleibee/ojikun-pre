@@ -51,5 +51,11 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  head: {
+    // 省略
+    link: [
+      { rel: "stylesheet", href:"https://use.fontawesome.com/releases/v5.6.1/css/all.css"}
+    ]
+  },
 }
