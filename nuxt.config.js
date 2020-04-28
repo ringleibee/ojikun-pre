@@ -52,12 +52,10 @@ export default {
     extend (config, ctx) {
     }
   },
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      }
+  head: {
+    // 省略
+    link: [
+      { rel: "stylesheet", href:"https://use.fontawesome.com/releases/v5.6.1/css/all.css"}
     ]
-  }
+  },
 }
