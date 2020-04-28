@@ -8,10 +8,10 @@
           <h3 class="text-xl">Please write this form</h3>
           <form class=" w-1/2 bg-transparent text-gray-700 mt-10">
             <label for="name">
-              <input type="text" name="name" id="name" :placeholder="icon + 'name'" />
+              <input type="text" name="name" id="name" :placeholder="icon[0] + ' name'" />
             </label>
             <label for="email">
-              <input type="email" name="email" id="email" :placeholder="icon +'email'">
+              <input type="email" name="email" id="email" :placeholder="icon[1] +' email'">
             </label>
             <label for="contents" class="form-end">
               <textarea class="resize-none" name="contents" id="contents" placeholder="Please contact me.."></textarea>
@@ -31,7 +31,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      icon: '\uf007'
+      icon: ['\uf007', '\uf0e0']
     }
   }
 })
@@ -56,9 +56,9 @@ label {
   margin-bottom: 0
 }
 
-/* input {
+input {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 400;
   content: '\f007';
-} */
+}
 </style>
