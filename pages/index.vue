@@ -3,6 +3,7 @@
     <o-home-section />
     <o-about-section />
     <o-services-section />
+    <o-works-section />
     <o-contact-section />
   </div>
 </template>
@@ -12,6 +13,7 @@ import Vue from 'vue'
 import OHomeSection from '~/components/OHomeSection.vue'
 import OAboutSection from '~/components/OAboutSection.vue'
 import OServicesSection from '~/components/OServicesSection.vue'
+import OWorksSection from '~/components/OWorksSection.vue'
 import OContactSection from '~/components/OContactSection.vue'
 
 export default Vue.extend({
@@ -19,6 +21,7 @@ export default Vue.extend({
     OAboutSection,
     OHomeSection,
     OServicesSection,
+    OWorksSection,
     OContactSection
   }
 })
