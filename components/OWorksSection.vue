@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="works min-h-screen flex items-center">
+    <section id="works" class="works min-h-screen flex items-center">
       <div class="container mx-auto">
         <div class="works-content flex flex-col leading-none">
           <h6 class="text-2xl">talking about with you...</h6>

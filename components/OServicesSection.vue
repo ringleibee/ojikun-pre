@@ -1,6 +1,6 @@
 <template>
   <div>
-      <section class="services min-h-screen flex items-center">
+      <section id="services" class="services min-h-screen flex items-center">
         <div class="container mx-auto">
           <div class="flex flex-col text-center leading-none">
             <h1 class="font-bold text-6xl">Services</h1>

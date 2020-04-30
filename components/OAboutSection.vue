@@ -1,6 +1,6 @@
 <template>
   <div>
-      <section class="about min-h-screen flex items-center">
+      <section id="about" class="about min-h-screen flex items-center">
         <div class="container mx-auto">
           <div class="about-title flex flex-col text-right leading-none">
             <p class="font-bold text-6xl">ABOUT ME</p>

@@ -28,6 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {src: "~plugins/vue-scrollto", ssr: false},
+    {src: "@/plugins/vee-validate"}
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,6 +51,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    transpile: ["vee-validate/dist/rules"],
     extend (config, ctx) {
     }
   },
