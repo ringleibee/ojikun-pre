@@ -2,21 +2,23 @@
   <div>
     <section class="contact min-h-screen flex items-center">
       <div class="container mx-auto">
-        <div class="contact-content flex flex-col leading-none">
-          <h6 class="text-2xl">talking about with you...</h6>
-          <h1 class="font-bold">Contact Me</h1>
-          <h3 class="text-xl">Please write this form</h3>
-          <form class=" w-1/2 bg-transparent text-gray-700 mt-10">
-            <label for="name">
-              <input type="text" name="name" id="name" :placeholder="icon[0] + ' name'" />
-            </label>
-            <label for="email">
-              <input type="email" name="email" id="email" :placeholder="icon[1] +' email'">
-            </label>
-            <label for="contents" class="form-end">
-              <textarea class="resize-none" name="contents" id="contents" placeholder="Please contact me.."></textarea>
-            </label>
-          </form>
+        <div class="wrap flex flex-row-reverse">
+          <div class="contact-content flex flex-col leading-none">
+            <h6 class="text-2xl">talking about with you...</h6>
+            <h1 class="font-bold">Contact Me</h1>
+            <h3 class="text-xl">Please write this form</h3>
+            <form class="w-full bg-transparent text-gray-700 mt-10">
+              <label for="name">
+                <input type="text" name="name" id="name" :placeholder="icon[0] + ' name'" />
+              </label>
+              <label for="email">
+                <input type="email" name="email" id="email" :placeholder="icon[1] +' email'">
+              </label>
+              <label for="contents" class="form-end">
+                <textarea class="resize-none" name="contents" id="contents" placeholder="Please contact me.."></textarea>
+              </label>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -39,8 +41,12 @@ export default Vue.extend({
 
 <style scoped>
 .contact-content {
-  border-left: 5px solid white;
-  padding-left: 5%;
+  border-right: 5px solid white;
+  padding-right: 5%;
+}
+
+.contact-content > h6, h3, h1 {
+  text-align: right;
 }
 
 h1 {
