@@ -1,38 +1,38 @@
 <template>
   <div>
     <div class="container mx-auto">
-      <div class="row flex flex-wrap justify-between items-center">
+      <div class="row flex flex-wrap justify-between h-20 items-center">
         <div class="brand-name">
           <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
         </div>
         <div class="navbar">
           <ul class="menulink">
             <li>
-              <nuxt-link to="/">
+              <nuxt-link v-scroll-to="'#home'" to>
                 Home
               </nuxt-link>
             </li>
 
             <li>
-              <nuxt-link to="/">
+              <nuxt-link v-scroll-to="'#about'" to>
                 About
               </nuxt-link>
             </li>
 
             <li>
-              <nuxt-link to="/">
+              <nuxt-link v-scroll-to="'#services'" to>
                 Services
               </nuxt-link>
             </li>
 
             <li>
-              <nuxt-link to="/">
+              <nuxt-link v-scroll-to="'#works'" to>
                 Works
               </nuxt-link>
             </li>
 
             <li>
-              <nuxt-link to="/">
+              <nuxt-link v-scroll-to="'#contact'" to>
                 Contact
               </nuxt-link>
             </li>
@@ -43,7 +43,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .logo {
   @apply text-2xl tracking-widest;
 }
@@ -66,7 +66,7 @@ li {
 
 .menulink > li::after {
   @apply absolute left-0 w-full;
-  bottom: -6px;
+  bottom: -30px;
   content: '';
   height: 4px;
   background: white;
