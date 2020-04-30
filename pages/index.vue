@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <o-home-section />
     <o-about-section />
     <o-services-section />
