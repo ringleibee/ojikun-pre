@@ -28,7 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: "~plugins/vue-scrollto", ssr: false},
+    {src: "~plugins/vue-scrollto"},
     {src: "@/plugins/vee-validate"}
   ],
   /*

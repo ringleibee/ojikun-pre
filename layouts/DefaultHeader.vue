@@ -2,11 +2,11 @@
   <div>
     <div class="container mx-auto">
       <div class="row flex flex-wrap justify-between h-20 items-center">
-        <transition appear name="header-left">
           <div class="brand-name">
-            <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
+            <transition appear name="header-left-appear">
+              <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
+            </transition>
           </div>
-        </transition>
           <div class="navbar">
             <ul class="menulink">
               <li>
@@ -48,7 +48,7 @@
 <script>
 export default {
   transition: {
-    name: 'header-left',
+    name: 'header-left-appear',
   }
 }
 </script>
@@ -89,12 +89,14 @@ li {
   transform: scale(1, 1);
 }
 
-.header-left-enter {
-    opacity: 0;
+.header-left-appear-enter {
+  opacity: 0;
 }
 
-.header-left-enter-active {
-  transition: 6s;
+.header-left-appear-enter-active {
+  transition: opacity 3s;
+}
+.header-left-appear-enter-to {
   opacity: 1;
 }
 </style>
