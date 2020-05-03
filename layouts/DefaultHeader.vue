@@ -2,46 +2,56 @@
   <div>
     <div class="container mx-auto">
       <div class="row flex flex-wrap justify-between h-20 items-center">
-        <div class="brand-name">
-          <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
-        </div>
-        <div class="navbar">
-          <ul class="menulink">
-            <li>
-              <nuxt-link v-scroll-to="'#home'" to>
-                Home
-              </nuxt-link>
-            </li>
+        <transition appear name="header-left">
+          <div class="brand-name">
+            <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
+          </div>
+        </transition>
+          <div class="navbar">
+            <ul class="menulink">
+              <li>
+                <nuxt-link v-scroll-to="'#home'" to>
+                  Home
+                </nuxt-link>
+              </li>
 
-            <li>
-              <nuxt-link v-scroll-to="'#about'" to>
-                About
-              </nuxt-link>
-            </li>
+              <li>
+                <nuxt-link v-scroll-to="'#about'" to>
+                  About
+                </nuxt-link>
+              </li>
 
-            <li>
-              <nuxt-link v-scroll-to="'#services'" to>
-                Services
-              </nuxt-link>
-            </li>
+              <li>
+                <nuxt-link v-scroll-to="'#services'" to>
+                  Services
+                </nuxt-link>
+              </li>
 
-            <li>
-              <nuxt-link v-scroll-to="'#works'" to>
-                Works
-              </nuxt-link>
-            </li>
+              <li>
+                <nuxt-link v-scroll-to="'#works'" to>
+                  Works
+                </nuxt-link>
+              </li>
 
-            <li>
-              <nuxt-link v-scroll-to="'#contact'" to>
-                Contact
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
+              <li>
+                <nuxt-link v-scroll-to="'#contact'" to>
+                  Contact
+                </nuxt-link>
+              </li>
+            </ul>
+          </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  transition: {
+    name: 'header-left',
+  }
+}
+</script>
 
 <style scoped>
 .logo {
@@ -77,5 +87,14 @@ li {
 
 .menulink > li:hover::after {
   transform: scale(1, 1);
+}
+
+.header-left-enter {
+    opacity: 0;
+}
+
+.header-left-enter-active {
+  transition: 6s;
+  opacity: 1;
 }
 </style>
