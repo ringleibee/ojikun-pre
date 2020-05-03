@@ -3,9 +3,7 @@
     <div class="container mx-auto">
       <div class="row flex flex-wrap justify-between h-20 items-center">
           <div class="brand-name">
-            <transition appear name="header-left-appear">
-              <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
-            </transition>
+            <nuxt-link to="/" class="logo">Ojikun.com</nuxt-link>
           </div>
           <div class="navbar">
             <ul class="menulink">
@@ -47,9 +45,6 @@
 
 <script>
 export default {
-  transition: {
-    name: 'header-left-appear',
-  }
 }
 </script>
 
@@ -89,14 +84,26 @@ li {
   transform: scale(1, 1);
 }
 
-.header-left-appear-enter {
+.brand-name {
   opacity: 0;
+  animation: header-delay 1s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
 }
 
-.header-left-appear-enter-active {
-  transition: opacity 3s;
+.navbar {
+  opacity: 0;
+  animation: header-delay 1s;
+  animation-delay: .7s;
+  animation-fill-mode: forwards;
 }
-.header-left-appear-enter-to {
-  opacity: 1;
+
+@keyframes header-delay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
