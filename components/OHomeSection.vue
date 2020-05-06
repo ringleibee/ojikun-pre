@@ -26,11 +26,49 @@ export default Vue.extend({
 
 <style>
 .home-content {
+  transform: scaleY(0);
+  transition: all 3s ease;
+  animation: line 1s;
+  animation-delay: .5s;
+  transform-origin: top;
   border-left: 5px solid white;
   padding-left: 5%;
+  animation-fill-mode: forwards;
 }
 
 h1 {
   font-size: 60px;
+}
+
+.home-content > h6, h1, h3 {
+  opacity: 0;
+  animation: delay 1s;
+  animation-delay: .9s;
+  animation-fill-mode: forwards;
+}
+
+.home-content > button {
+  opacity: 0;
+  animation: delay 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes delay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 </style>
