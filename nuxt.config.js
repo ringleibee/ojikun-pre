@@ -12,7 +12,9 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'},
+      { rel: "stylesheet", href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'}
     ]
   },
   /*
@@ -30,7 +32,9 @@ export default {
   */
   plugins: [
     {src: "~plugins/vue-scrollto"},
-    {src: "@/plugins/vee-validate"}
+    {src: "~plugins/vee-validate" ,ssr: false},
+    {src: "~plugins/observe-visibility", ssr: false },
+    {src: "~plugins/vueinview", ssr: false}
   ],
   /*
   ** Nuxt.js dev-modules
@@ -52,14 +56,8 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    transpile: ["vee-validate/dist/rules"],
+    transpile: ["vee-validate/dist/rules", "vueinview"],
     extend (config, ctx) {
     }
-  },
-  head: {
-    // 省略
-    link: [
-      { rel: "stylesheet", href:"https://use.fontawesome.com/releases/v5.6.1/css/all.css"}
-    ]
-  },
+  }
 }
