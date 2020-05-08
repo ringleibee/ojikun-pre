@@ -8,9 +8,11 @@
           </div>
 
           <div class="services-contents flex flex-row justify-center">
-            <div class="box">
-              <img src="~assets/images/webdev.jpg">
-              Web Developping.
+            <div v-inview:animate="'fadeInLeft'">
+              <div class="box">
+                <img src="~assets/images/webdev.jpg">
+                Web Developping.
+              </div>
             </div>
 
             <div class="box">
